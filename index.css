@@ -78,7 +78,7 @@ body {
 .images {
 width: 375px;
 height: 125px;
-float:
+float: left;
 }
 
 .images2 {
