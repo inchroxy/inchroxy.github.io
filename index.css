@@ -2,6 +2,9 @@ body {
     background-color: black;
 }
 
+#logoimage {
+    float: left;
+}
 .dropbtn {
     background-color: black;
     color: white;
