@@ -14,7 +14,7 @@ body {
 }
 
 .dropdown {
-    position: relative;
+    float: left;
     display: inline-block;
 }
 
