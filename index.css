@@ -79,6 +79,7 @@ body {
 width: 375px;
 height: 125px;
 float: none;
+align-items: center;
 }
 
 .images2 {
