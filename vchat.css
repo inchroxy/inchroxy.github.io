@@ -1,16 +1,16 @@
 body {
     background-color: black;
-}
-
-#logoimage {
+  }
+  
+  #logoimage {
     float: left;
-}
-/* Navbar container */
-.navbar {
+  }
+  /* Navbar container */
+  .navbar {
     overflow: hidden;
     background-color: #333;
     font-family: Arial;
-}
+  }
   
   /* Links inside the navbar */
   .navbar a {
