@@ -71,3 +71,6 @@
   .dropdown:hover .dropdown-content {
     display: block;
   }
+  #logoimage {
+    float: left;
+  }
