@@ -92,5 +92,6 @@ h1 { text-align: center; font-family: "Maven Pro"; font-size: 60px; font-style: 
 
 #password {
   height: 100%;
-  width: 100%
+  width: 100%;
+  background-color: white;
 }
