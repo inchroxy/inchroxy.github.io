@@ -30,7 +30,7 @@
             function checkCookie() {
                 let user = getCookie("password");
                 if (user == "youjustgotfnAFed#b2hoo$") {
-                    location.href = "home.html"
+                    location.href = "home.html";
                 }
             }
         </script>
@@ -39,6 +39,7 @@
             <input type="password" id="pswd">
             <input type="button" value="Submit" onclick="checkPswd();" />
         </form>
+        <button onclick="goSkip()" id="spartanburger" width="400px" height="400px" font-size="300px">SKIP</button>
         <!--Function to check password the already set password is admin-->
         <script type="text/javascript">
             function checkPswd() {
@@ -50,6 +51,9 @@
                 else{
                     document.getElementById("labellonzo").value = "Wrong Password"
                 }
+            }
+            function goSkip() {
+                checkCookie();
             }
         </script>
     </body>
