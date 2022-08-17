@@ -1,60 +1,89 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Login page</title>
+        <title>Inchroxy</title>
+        <link rel="stylesheet" href="index.css">
+        <link rel="icon" type="image/x-icon" href="images/Incha Ruler.png">
+        <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Maven+Pro" />
     </head>
-    <body onload="checkCookie()">
-        <script>
-            function setCookie(cname, cvalue, exdays) {
-                const d = new Date();
-                d.setTime(d.getTime() + (exdays * 24 * 60 * 60 * 1000));
-                let expires = "expires="+d.toUTCString();
-                document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
+    <body oncontextmenu="return false;">
+      <!--Block Inspect Element-->
+      <script>
+        document.onkeydown = function (e) {
+            if (event.keyCode == 123) {
+                return false;
             }
-
-            function getCookie(cname) {
-                let name = cname + "=";
-                let ca = document.cookie.split(';');
-                for(let i = 0; i < ca.length; i++) {
-                    let c = ca[i];
-                    while (c.charAt(0) == ' ') {
-                    c = c.substring(1);
-                    }
-                    if (c.indexOf(name) == 0) {
-                    return c.substring(name.length, c.length);
-                    }
-                }
-                return "";
+            if (e.ctrlKey && e.shiftKey && (e.keyCode == 'I'.charCodeAt(0) || e.keyCode == 'i'.charCodeAt(0))) {
+                return false;
             }
-
-            function checkCookie() {
-                let user = getCookie("password");
-                if (user == "youjustgotfnAFed#b2hoo$") {
-                    location.href = "home.html";
-                }
+            if (e.ctrlKey && e.shiftKey && (e.keyCode == 'C'.charCodeAt(0) || e.keyCode == 'c'.charCodeAt(0))) {
+                return false;
             }
-        </script>
-        <form>
-            <label  id="labellonzo" for="pswd">Enter your password: </label>
-            <input type="password" id="pswd">
-            <input type="button" value="Submit" onclick="checkPswd();" />
-        </form>
-        <button onclick="goSkip()" id="spartanburger" width="400px" height="400px" font-size="300px">SKIP</button>
-        <!--Function to check password the already set password is admin-->
-        <script type="text/javascript">
-            function checkPswd() {
-                var confirmPassword = "youjustgotfnAFed#b2hoo$";
-                var password = document.getElementById("pswd").value;
-                if (password == confirmPassword) {
-                    setCookie(password, correct, 120)
-                }
-                else{
-                    document.getElementById("labellonzo").value = "Wrong Password"
-                }
+            if (e.ctrlKey && e.shiftKey && (e.keyCode == 'J'.charCodeAt(0) || e.keyCode == 'j'.charCodeAt(0))) {
+                return false;
             }
-            function goSkip() {
-                checkCookie();
+            if (e.ctrlKey && (e.keyCode == 'U'.charCodeAt(0) || e.keyCode == 'u'.charCodeAt(0))) {
+                return false;
             }
-        </script>
+            if (e.ctrlKey && (e.keyCode == 'S'.charCodeAt(0) || e.keyCode == 's'.charCodeAt(0))) {
+                return false;
+            }
+        }
+      </script>
+      <!--Top Logo-->
+        <img id="logoimage" src="images/Inchroxy.png" height="56px" width="175px" onclick="location.href='index.html'">
+        <!--Nav Bar-->
+        <div class="navbar">
+            <a href="index.html">Home</a>
+            <a href="chat.html">Group Chat</a>
+            <a href="vchat.html">Voice Chat</a>
+            <a href="changelog.html">Changelog</a>
+            <a href="bookmarklets.html">Bookmarklets</a>
+            <div class="dropdown">
+              <button onclick="location.href='games.html'" class="dropbtn">Games
+                <i class="fa fa-caret-down"></i>
+              </button>
+              <div class="dropdown-content">
+                <a href="chess.html">Chess</a>
+                <a href="mine.html">Minecraft</a>
+                <a href="fnaf.html">FNAF</a>
+                <a href="fnaf2.html">FNAF 2</a>
+                <a href="srfpsg.html">Some Random FPS Game</a>
+                <a href="Connect4.html">Connect4</a>
+                <a href="cookieclick.html">Cookie Clicker</a>
+                <a href="droneracer.html">Drone Racer</a>
+                <a href="spaceinvader.html">Space Invaders</a>
+                <a href="tictac.html">TicTacToe</a>
+                <a href="fnf.html">Friday Night Funkin'</a>
+                <a href="flappy bird.html">Flappy Bird</a> 
+                <a href="duck.html">Duck Life</a>  
+                <a href="gd.html">Geometry Dash</a>        
+                <a href="gd2.html">Geometry Dash 2</a>   
+                <a href="gds.html">Geometry Dash Subzero</a> 
+              </div>
+            </div>
+            <div class="dropdown">
+              <button onclick="location.href='domains.html'"class="dropbtn">Domains
+                <i class="fa fa-caret-down"></i>
+              </button>
+              <div class="dropdown-content">
+                <a href="#">Holy Unblocker</a>
+                <a href="#">Ultraviolet</a>
+                <a href="#">Rammerhead</a>
+              </div>
+            </div>
+          </div>
+          <!--End Nav Bar-->
+          <!--Home Page Links-->
+          <center>
+            <h1>Welcome to Inchroxy</h1>
+            <br>
+            <img class="images" src="images/Chatart.png" onclick="location.href='chat.html'">
+            <img class="images" src="images/Voice Chat.png" onclick="location.href='vchat.html'">
+            <img class="images" src="images/Bookmarklets.png" onclick="location.href='bookmarklets.html'">
+            <img class="images" src="images/Games.png" onclick="location.href='games.html'">
+            <img class="images" src="images/Domains.png" onlick="location.href='domains.html'">
+            <img class="images" src="images/Changelog.png" onclick="location.href='changelog.html'">
+          </center>
     </body>
 </html>
